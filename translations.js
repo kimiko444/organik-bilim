@@ -6,6 +6,7 @@ const TRANSLATIONS = {
 
     // ── Navigation ──
     'nav.logo':    '🌱 Organik Bilim',
+	'nav.home':    'Anasayfa',
     'nav.about':   'Hakkımızda',
     'nav.waste':   'Organik Atık Ne?',
     'nav.compost': 'Kompost Ne?',
@@ -366,6 +367,7 @@ const TRANSLATIONS = {
     'lang.switch': 'TR',
 
     'nav.logo':    '🌱 Organic Science',
+	'nav.home':    'Home',
     'nav.about':   'About Us',
     'nav.waste':   'What is Organic Waste?',
     'nav.compost': 'What is Compost?',
