@@ -8,28 +8,31 @@
 </head>
 <body>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 
   <nav class="nav-menu" id="navMenu">
-    <div class="nav-logo">🌱 Organik Bilim</div>
+    <div class="nav-logo" data-i18n="nav.logo">🌱 Organik Bilim</div>
     <ul>
-      <li><a href="hakkimizda.html">Hakkımızda</a></li>
-      <li><a href="organik_atik.html">Organik Atık Ne?</a></li>
-      <li><a href="kompost_ne.html">Kompost Ne?</a></li>
-      <li><a href="kompost_nasil.html">Kompost Nasıl Yapılır?</a></li>
-      <li><a href="neler_yapilabilir.html">Neler Yapılabilir?</a></li>
-      <li><a href="harezmi_projesi.html">Harezmi Projesi Hakkında</a></li>
+		
+      <li><a href="hakkimizda.html"        data-i18n="nav.about">Hakkımızda</a></li>
+      <li><a href="organik_atik.html"      data-i18n="nav.waste">Organik Atık Ne?</a></li>
+      <li><a href="kompost_ne.html"        data-i18n="nav.compost">Kompost Ne?</a></li>
+      <li><a href="kompost_nasil.html"     data-i18n="nav.howto">Kompost Nasıl Yapılır?</a></li>
+      <li><a href="neler_yapilabilir.html" data-i18n="nav.actions">Neler Yapılabilir?</a></li>
+      <li><a href="harezmi_projesi.html"   data-i18n="nav.project">Harezmi Projesi Hakkında</a></li>
     </ul>
   </nav>
   <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- ── Page Header ── -->
   <header class="page-header">
-    <div class="section-label">Biz Kimiz</div>
-    <h1 class="section-title">Hakkı<span>mızda</span></h1>
-    <p class="section-lead">
+    <div class="section-label" data-i18n="about.header.label">Biz Kimiz</div>
+    <h1 class="section-title"  data-i18n="about.header.title">Hakkı<span>mızda</span></h1>
+    <p class="section-lead"    data-i18n="about.header.lead">
       Doğayı seven, fark yaratmak isteyen gençlerden oluşan bir ekibiz.
       Organik atıkları toprağa kazandırmak için çalışıyoruz.
     </p>
@@ -39,32 +42,29 @@
   <section class="section">
     <div class="info-grid">
       <div class="info-text">
-        <div class="section-label">Misyonumuz</div>
-        <h2 class="section-title">Neden <span>Buradayız?</span></h2>
-        <p>
+        <div class="section-label" data-i18n="about.intro.label">Misyonumuz</div>
+        <h2 class="section-title"  data-i18n="about.intro.title">Neden <span>Buradayız?</span></h2>
+        <p data-i18n="about.intro.p1">
           Organik Bilim, organik atık sorununa farkındalık kazandırmak ve pratik çözümler
           sunmak amacıyla kurulmuş bir okul projesidir. Günlük hayatta fark etmeden ürettiğimiz
           organik atıkların nasıl değerli bir kaynağa dönüşebileceğini anlatmak için çalışıyoruz.
         </p>
-        <p>
+        <p data-i18n="about.intro.p2">
           Kompost yapımından sıfır atık alışkanlıklarına kadar uzanan geniş bir içerik
           yelpazesiyle hem öğrencilere hem de ailelere ulaşmayı hedefliyoruz.
         </p>
         <div class="tags">
-          <span class="tag">Sürdürülebilirlik</span>
-          <span class="tag">Kompost</span>
-          <span class="tag">Sıfır Atık</span>
-          <span class="tag">Çevre Eğitimi</span>
-          <span class="tag">Okul Projesi</span>
+          <span class="tag" data-i18n="about.tag1">Sürdürülebilirlik</span>
+          <span class="tag" data-i18n="about.tag2">Kompost</span>
+          <span class="tag" data-i18n="about.tag3">Sıfır Atık</span>
+          <span class="tag" data-i18n="about.tag4">Çevre Eğitimi</span>
+          <span class="tag" data-i18n="about.tag5">Okul Projesi</span>
         </div>
       </div>
       <div class="info-img">
         <!-- Intro image: team photo, working in school garden, or project presentation recommended -->
-        <!-- <img src="hakkimizda_misyon.jpg" alt="Team mission image" /> -->
-        <div class="img-placeholder" style="height:320px;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
-          <span>Ekip / proje görseli önerilir</span>
-        </div>
+        <img src="pictures\1-2068689927.png" alt="Team mission image" />
+       
       </div>
     </div>
   </section>
@@ -72,36 +72,36 @@
   <!-- ── Our Values ── -->
   <div class="section-full">
     <div class="inner">
-      <div class="section-label">Değerlerimiz</div>
-      <h2 class="section-title" style="margin-bottom:2rem;">Bizi <span>Yönlendiren</span> Ne?</h2>
+      <div class="section-label" data-i18n="about.values.label">Değerlerimiz</div>
+      <h2 class="section-title" style="margin-bottom:2rem;" data-i18n="about.values.title">Bizi <span>Yönlendiren</span> Ne?</h2>
 
       <div class="cards">
         <div class="card">
           <div class="card-body">
             <div class="card-icon">🌱</div>
-            <h3>Doğa Sevgisi</h3>
-            <p>Her kararımızın merkezinde doğa ve gelecek nesiller var. Toprak sağlıklıysa yaşam sağlıklıdır.</p>
+            <h3 data-i18n="about.val1.title">Doğa Sevgisi</h3>
+            <p  data-i18n="about.val1.desc">Her kararımızın merkezinde doğa ve gelecek nesiller var. Toprak sağlıklıysa yaşam sağlıklıdır.</p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <div class="card-icon">🔬</div>
-            <h3>Bilimsel Yaklaşım</h3>
-            <p>Söylediklerimizi bilimsel verilere ve deneyimlere dayandırıyoruz. Merak etmek, araştırmak, paylaşmak.</p>
+            <h3 data-i18n="about.val2.title">Bilimsel Yaklaşım</h3>
+            <p  data-i18n="about.val2.desc">Söylediklerimizi bilimsel verilere ve deneyimlere dayandırıyoruz. Merak etmek, araştırmak, paylaşmak.</p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <div class="card-icon">🤝</div>
-            <h3>Topluluk Ruhu</h3>
-            <p>Bireysel değil toplulukça değişim mümkün. Öğrenci, öğretmen, aile — hepimiz bu döngünün parçasıyız.</p>
+            <h3 data-i18n="about.val3.title">Topluluk Ruhu</h3>
+            <p  data-i18n="about.val3.desc">Bireysel değil toplulukça değişim mümkün. Öğrenci, öğretmen, aile — hepimiz bu döngünün parçasıyız.</p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <div class="card-icon">♻️</div>
-            <h3>Sürdürülebilirlik</h3>
-            <p>Bugünün ihtiyaçlarını karşılarken yarının kaynaklarını tüketmemek en temel önceliğimiz.</p>
+            <h3 data-i18n="about.val4.title">Sürdürülebilirlik</h3>
+            <p  data-i18n="about.val4.desc">Bugünün ihtiyaçlarını karşılarken yarının kaynaklarını tüketmemek en temel önceliğimiz.</p>
           </div>
         </div>
       </div>
@@ -110,8 +110,8 @@
 
   <!-- ── Team ── -->
   <section class="section">
-    <div class="section-label">Ekibimiz</div>
-    <h2 class="section-title" style="margin-bottom:2rem;">Projeyi Yürütenler</h2>
+    <div class="section-label" data-i18n="about.team.label">Ekibimiz</div>
+    <h2 class="section-title" style="margin-bottom:2rem;" data-i18n="about.team.title">Projeyi Yürütenler</h2>
 
     <div class="cards">
 
@@ -124,8 +124,8 @@
           </div>
         </div>
         <div class="card-body">
-          <h3>Proje Lideri</h3>
-          <p>Projenin genel koordinasyonunu yürütür, içerik planlamasını ve araştırma süreçlerini yönetir.</p>
+          <h3 data-i18n="about.m1.title">Proje Lideri</h3>
+          <p  data-i18n="about.m1.desc">Projenin genel koordinasyonunu yürütür, içerik planlamasını ve araştırma süreçlerini yönetir.</p>
         </div>
       </div>
 
@@ -138,22 +138,18 @@
           </div>
         </div>
         <div class="card-body">
-          <h3>Araştırma & İçerik</h3>
-          <p>Organik atık ve kompost konularında kaynak araştırması yapar, içerikleri Türkçe ve anlaşılır dille hazırlar.</p>
+          <h3 data-i18n="about.m2.title">Araştırma & İçerik</h3>
+          <p  data-i18n="about.m2.desc">Organik atık ve kompost konularında kaynak araştırması yapar, içerikleri Türkçe ve anlaşılır dille hazırlar.</p>
         </div>
       </div>
 
       <div class="card">
         <!-- Team member image: personal photo or avatar recommended -->
-        <!-- <img src="uye3.jpg" alt="Team member 3" /> -->
-        <div class="card-img">
-          <div class="img-placeholder" style="height:140px; border-radius: 20px 20px 0 0;">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
-          </div>
-        </div>
+       <img src="pictures\MeAndHerFinal.jpg" alt="Team member 3" />
+       
         <div class="card-body">
-          <h3>Tasarım & Sunum</h3>
-          <p>Web sitesi tasarımı ve görsel sunumundan sorumludur. Kullanıcı deneyimini ön planda tutar.</p>
+          <h3 data-i18n="about.m3.title">Tasarım & Sunum</h3>
+          <p  data-i18n="about.m3.desc">Web sitesi tasarımı ve görsel sunumundan sorumludur. Kullanıcı deneyimini ön planda tutar.</p>
         </div>
       </div>
 
@@ -166,8 +162,8 @@
           </div>
         </div>
         <div class="card-body">
-          <h3>Danışman Öğretmen</h3>
-          <p>Projeye rehberlik eden, bilimsel doğruluk ve yöntem konusunda destek veren öğretmenimiz.</p>
+          <h3 data-i18n="about.m4.title">Danışman Öğretmen</h3>
+          <p  data-i18n="about.m4.desc">Projeye rehberlik eden, bilimsel doğruluk ve yöntem konusunda destek veren öğretmenimiz.</p>
         </div>
       </div>
 
@@ -175,10 +171,12 @@
   </section>
 
   <footer>
-    <div class="footer-logo">🌱 Organik Bilim</div>
-    <p>Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
+    <div class="footer-logo" data-i18n="footer.logo">🌱 Organik Bilim</div>
+    <p data-i18n="footer.text">Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
   </footer>
 
   <script src="nav.js"></script>
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>

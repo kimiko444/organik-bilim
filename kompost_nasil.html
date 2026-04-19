@@ -8,27 +8,29 @@
 </head>
 <body>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 
   <nav class="nav-menu" id="navMenu">
-    <div class="nav-logo">🌱 Organik Bilim</div>
+    <div class="nav-logo" data-i18n="nav.logo">🌱 Organik Bilim</div>
     <ul>
-      <li><a href="hakkimizda.html">Hakkımızda</a></li>
-      <li><a href="organik_atik.html">Organik Atık Ne?</a></li>
-      <li><a href="kompost_ne.html">Kompost Ne?</a></li>
-      <li><a href="kompost_nasil.html">Kompost Nasıl Yapılır?</a></li>
-      <li><a href="neler_yapilabilir.html">Neler Yapılabilir?</a></li>
-      <li><a href="harezmi_projesi.html">Harezmi Projesi Hakkında</a></li>
+      <li><a href="hakkimizda.html"        data-i18n="nav.about">Hakkımızda</a></li>
+      <li><a href="organik_atik.html"      data-i18n="nav.waste">Organik Atık Ne?</a></li>
+      <li><a href="kompost_ne.html"        data-i18n="nav.compost">Kompost Ne?</a></li>
+      <li><a href="kompost_nasil.html"     data-i18n="nav.howto">Kompost Nasıl Yapılır?</a></li>
+      <li><a href="neler_yapilabilir.html" data-i18n="nav.actions">Neler Yapılabilir?</a></li>
+      <li><a href="harezmi_projesi.html"   data-i18n="nav.project">Harezmi Projesi Hakkında</a></li>
     </ul>
   </nav>
   <div class="nav-overlay" id="navOverlay"></div>
 
   <header class="page-header">
-    <div class="section-label">Adım Adım Rehber</div>
-    <h1 class="section-title">Kompost Nasıl <span>Yapılır?</span></h1>
-    <p class="section-lead">
+    <div class="section-label" data-i18n="howto.header.label">Adım Adım Rehber</div>
+    <h1 class="section-title"  data-i18n="howto.header.title">Kompost Nasıl <span>Yapılır?</span></h1>
+    <p class="section-lead"    data-i18n="howto.header.lead">
       Evde, okulda veya bahçede sadece birkaç adımla kendi kompostunu üretebilirsin.
       Başlamak için büyük bir alana ya da pahalı malzemelere gerek yok!
     </p>
@@ -36,51 +38,51 @@
 
   <!-- ── What You Need ── -->
   <section class="section">
-    <div class="section-label">Malzemeler</div>
-    <h2 class="section-title">Neye <span>İhtiyacın Var?</span></h2>
-    <p class="section-lead">Kompost yapmak için temel iki bileşen yeterli: organik madde ve sabır.</p>
+    <div class="section-label" data-i18n="howto.need.label">Malzemeler</div>
+    <h2 class="section-title"  data-i18n="howto.need.title">Neye <span>İhtiyacın Var?</span></h2>
+    <p class="section-lead"    data-i18n="howto.need.lead">Kompost yapmak için temel iki bileşen yeterli: organik madde ve sabır.</p>
 
     <div class="cards">
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🟩</div>
-          <h3>Yeşiller (Azot Kaynakları)</h3>
-          <p>Meyve & sebze kabukları, kahve/çay posası, taze çim kırpıntıları, yemek artıkları (et/süt hariç).</p>
+          <h3 data-i18n="howto.green.title">Yeşiller (Azot Kaynakları)</h3>
+          <p  data-i18n="howto.green.desc">Meyve & sebze kabukları, kahve/çay posası, taze çim kırpıntıları, yemek artıkları (et/süt hariç).</p>
           <div class="tags mt-2">
-            <span class="tag">Nemli</span>
-            <span class="tag">Azot Zengini</span>
+            <span class="tag" data-i18n="howto.green.tag1">Nemli</span>
+            <span class="tag" data-i18n="howto.green.tag2">Azot Zengini</span>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🟫</div>
-          <h3>Kahverengiler (Karbon Kaynakları)</h3>
-          <p>Kuru yapraklar, dal ve sap parçaları, karton, gazete kağıdı, tahta talaşı, yumurta kartonları.</p>
+          <h3 data-i18n="howto.brown.title">Kahverengiler (Karbon Kaynakları)</h3>
+          <p  data-i18n="howto.brown.desc">Kuru yapraklar, dal ve sap parçaları, karton, gazete kağıdı, tahta talaşı, yumurta kartonları.</p>
           <div class="tags mt-2">
-            <span class="tag">Kuru</span>
-            <span class="tag">Karbon Zengini</span>
+            <span class="tag" data-i18n="howto.brown.tag1">Kuru</span>
+            <span class="tag" data-i18n="howto.brown.tag2">Karbon Zengini</span>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">💧</div>
-          <h3>Su</h3>
-          <p>Yığının sünger gibi nemli olması gerekir — ne çok ıslak ne çok kuru. Gerektiğinde su ekle ya da azalt.</p>
+          <h3 data-i18n="howto.water.title">Su</h3>
+          <p  data-i18n="howto.water.desc">Yığının sünger gibi nemli olması gerekir — ne çok ıslak ne çok kuru. Gerektiğinde su ekle ya da azalt.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">💨</div>
-          <h3>Hava (Oksijen)</h3>
-          <p>Düzenli karıştırma, yığına oksijen girmesini sağlar. Bu sayede kötü koku yerine ormansı bir aroma oluşur.</p>
+          <h3 data-i18n="howto.air.title">Hava (Oksijen)</h3>
+          <p  data-i18n="howto.air.desc">Düzenli karıştırma, yığına oksijen girmesini sağlar. Bu sayede kötü koku yerine ormansı bir aroma oluşur.</p>
         </div>
       </div>
     </div>
 
     <div class="highlight" style="margin-top:2rem;">
-      <p>
+      <p data-i18n="howto.warning">
         ⚠️ <strong>Kompost yaparken bunları ekleme:</strong> Et ve balık artıkları, süt ürünleri,
         yağlı yiyecekler, hasta bitkiler, evcil hayvan dışkısı. Bu maddeler kötü kokuya yol açar
         ve zararlı mikroplara ortam hazırlayabilir.
@@ -91,64 +93,61 @@
   <!-- ── Step by Step ── -->
   <div class="section-full">
     <div class="inner">
-      <div class="section-label">Süreç</div>
-      <h2 class="section-title" style="margin-bottom:2rem;">Adım Adım <span>Kompost</span></h2>
+      <div class="section-label" data-i18n="howto.steps.label">Süreç</div>
+      <h2 class="section-title" style="margin-bottom:2rem;" data-i18n="howto.steps.title">Adım Adım <span>Kompost</span></h2>
 
       <!-- Step-by-step compost image: adding materials to bin, turning, and maturation process recommended -->
-      <!-- <img src="kompost_adimlar.jpg" alt="Compost making steps" /> -->
-      <div class="img-placeholder mb-3" style="height:200px;">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <span>Kompost yapım adımları — infografik / fotoğraf önerilir</span>
-      </div>
+      <img src="pictures\compostinglayers.jpg" alt="Compost making steps" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 30px; width: 50%;" />
+      
 
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-content">
-            <h3>Yer ya da Kap Seç</h3>
-            <p>Bahçende doğrudan toprağa yığın kurabilir, ya da delikli bir kasa/kova kullanabilirsin. Balkon kompostu için küçük, kapaklı bir kap idealdir.</p>
+            <h3 data-i18n="howto.s1.title">Yer ya da Kap Seç</h3>
+            <p  data-i18n="howto.s1.desc">Bahçende doğrudan toprağa yığın kurabilir, ya da delikli bir kasa/kova kullanabilirsin. Balkon kompostu için küçük, kapaklı bir kap idealdir.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-content">
-            <h3>Kaba Karbon Tabanı Oluştur</h3>
-            <p>Dibine 5–10 cm kuru yaprak ya da karton parçası döşe. Bu tabaka havalanmayı sağlar ve nem fazlasını emer.</p>
+            <h3 data-i18n="howto.s2.title">Kaba Karbon Tabanı Oluştur</h3>
+            <p  data-i18n="howto.s2.desc">Dibine 5–10 cm kuru yaprak ya da karton parçası döşe. Bu tabaka havalanmayı sağlar ve nem fazlasını emer.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-content">
-            <h3>Yeşil ve Kahverengini Katmanla</h3>
-            <p>2 kat kahverengi : 1 kat yeşil oranını hedefle. Katmanları birbirinin üstüne yığarak devam et.</p>
+            <h3 data-i18n="howto.s3.title">Yeşil ve Kahverengini Katmanla</h3>
+            <p  data-i18n="howto.s3.desc">2 kat kahverengi : 1 kat yeşil oranını hedefle. Katmanları birbirinin üstüne yığarak devam et.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-content">
-            <h3>Nem Kontrolü Yap</h3>
-            <p>Yığını sık sık kontrol et. Avucuna alıp sıktığında birkaç damla su geliyorsa nem doğru demektir. Kurumuşsa su ekle, çok ıslaksa kahverengi ekle.</p>
+            <h3 data-i18n="howto.s4.title">Nem Kontrolü Yap</h3>
+            <p  data-i18n="howto.s4.desc">Yığını sık sık kontrol et. Avucuna alıp sıktığında birkaç damla su geliyorsa nem doğru demektir. Kurumuşsa su ekle, çok ıslaksa kahverengi ekle.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">5</div>
           <div class="step-content">
-            <h3>Haftada 1–2 Kez Karıştır</h3>
-            <p>Kürek ya da dal yardımıyla yığını alt-üst et. Bu işlem oksijen girişini artırır ve ayrışmayı hızlandırır.</p>
+            <h3 data-i18n="howto.s5.title">Haftada 1–2 Kez Karıştır</h3>
+            <p  data-i18n="howto.s5.desc">Kürek ya da dal yardımıyla yığını alt-üst et. Bu işlem oksijen girişini artırır ve ayrışmayı hızlandırır.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">6</div>
           <div class="step-content">
-            <h3>Kompostun Olgunlaşmasını Bekle</h3>
-            <p>Yaz aylarında 2–3 ayda, kışın 4–6 ayda hazır olur. Rengi koyu kahverengi, kokusu toprak gibi olduğunda kompost hazırdır!</p>
+            <h3 data-i18n="howto.s6.title">Kompostun Olgunlaşmasını Bekle</h3>
+            <p  data-i18n="howto.s6.desc">Yaz aylarında 2–3 ayda, kışın 4–6 ayda hazır olur. Rengi koyu kahverengi, kokusu toprak gibi olduğunda kompost hazırdır!</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">7</div>
           <div class="step-content">
-            <h3>Toprağa Karıştır</h3>
-            <p>Olgun kompostu bahçe toprağına, saksı toprağına ya da tarla yüzeyine karıştır. Bitkiler hemen farkı gösterecek!</p>
+            <h3 data-i18n="howto.s7.title">Toprağa Karıştır</h3>
+            <p  data-i18n="howto.s7.desc">Olgun kompostu bahçe toprağına, saksı toprağına ya da tarla yüzeyine karıştır. Bitkiler hemen farkı gösterecek!</p>
           </div>
         </div>
       </div>
@@ -157,39 +156,41 @@
 
   <!-- ── Tips & FAQ ── -->
   <section class="section">
-    <div class="section-label">Pratik Bilgi</div>
-    <h2 class="section-title">Sık Sorulan <span>Sorular</span></h2>
+    <div class="section-label" data-i18n="howto.faq.label">Pratik Bilgi</div>
+    <h2 class="section-title"  data-i18n="howto.faq.title">Sık Sorulan <span>Sorular</span></h2>
 
     <div class="cards">
       <div class="card">
         <div class="card-body">
           <div class="card-icon">👃</div>
-          <h3>Kompost kokuyor mu?</h3>
-          <p>Doğru yapıldığında toprak kokusu dışında kötü bir koku oluşmaz. Kötü koku varsa, daha fazla kahverengi ekle ve karıştır.</p>
+          <h3 data-i18n="howto.faq1.title">Kompost kokuyor mu?</h3>
+          <p  data-i18n="howto.faq1.desc">Doğru yapıldığında toprak kokusu dışında kötü bir koku oluşmaz. Kötü koku varsa, daha fazla kahverengi ekle ve karıştır.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🏢</div>
-          <h3>Apartmanda yapılabilir mi?</h3>
-          <p>Evet! Balkon kompost kutuları ya da solucan kompostu (vermikompost) yöntemiyle küçük mekânlarda da yapılabilir.</p>
+          <h3 data-i18n="howto.faq2.title">Apartmanda yapılabilir mi?</h3>
+          <p  data-i18n="howto.faq2.desc">Evet! Balkon kompost kutuları ya da solucan kompostu (vermikompost) yöntemiyle küçük mekânlarda da yapılabilir.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🪲</div>
-          <h3>Böcek olur mu?</h3>
-          <p>Solucanlar ve bazı böcekler kompost için faydalıdır. Kapalı, aşırı nemli ya da kötü koku yayan kompost sinek çekebilir; bu sorunlar dengeli yönetimle çözülür.</p>
+          <h3 data-i18n="howto.faq3.title">Böcek olur mu?</h3>
+          <p  data-i18n="howto.faq3.desc">Solucanlar ve bazı böcekler kompost için faydalıdır. Kapalı, aşırı nemli ya da kötü koku yayan kompost sinek çekebilir; bu sorunlar dengeli yönetimle çözülür.</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="footer-logo">🌱 Organik Bilim</div>
-    <p>Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
+    <div class="footer-logo" data-i18n="footer.logo">🌱 Organik Bilim</div>
+    <p data-i18n="footer.text">Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
   </footer>
 
   <script src="nav.js"></script>
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>

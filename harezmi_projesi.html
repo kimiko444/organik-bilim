@@ -8,27 +8,29 @@
 </head>
 <body>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 
   <nav class="nav-menu" id="navMenu">
-    <div class="nav-logo">🌱 Organik Bilim</div>
+    <div class="nav-logo" data-i18n="nav.logo">🌱 Organik Bilim</div>
     <ul>
-      <li><a href="hakkimizda.html">Hakkımızda</a></li>
-      <li><a href="organik_atik.html">Organik Atık Ne?</a></li>
-      <li><a href="kompost_ne.html">Kompost Ne?</a></li>
-      <li><a href="kompost_nasil.html">Kompost Nasıl Yapılır?</a></li>
-      <li><a href="neler_yapilabilir.html">Neler Yapılabilir?</a></li>
-      <li><a href="harezmi_projesi.html">Harezmi Projesi Hakkında</a></li>
+      <li><a href="hakkimizda.html"        data-i18n="nav.about">Hakkımızda</a></li>
+      <li><a href="organik_atik.html"      data-i18n="nav.waste">Organik Atık Ne?</a></li>
+      <li><a href="kompost_ne.html"        data-i18n="nav.compost">Kompost Ne?</a></li>
+      <li><a href="kompost_nasil.html"     data-i18n="nav.howto">Kompost Nasıl Yapılır?</a></li>
+      <li><a href="neler_yapilabilir.html" data-i18n="nav.actions">Neler Yapılabilir?</a></li>
+      <li><a href="harezmi_projesi.html"   data-i18n="nav.project">Harezmi Projesi Hakkında</a></li>
     </ul>
   </nav>
   <div class="nav-overlay" id="navOverlay"></div>
 
   <header class="page-header">
-    <div class="section-label">Okul Projesi</div>
-    <h1 class="section-title">Harezmi <span>Projesi</span></h1>
-    <p class="section-lead">
+    <div class="section-label" data-i18n="project.header.label">Okul Projesi</div>
+    <h1 class="section-title"  data-i18n="project.header.title">Harezmi <span>Projesi</span></h1>
+    <p class="section-lead"    data-i18n="project.header.lead">
       Harezmi Ortaokulu öğrencilerinin geliştirdiği bu proje; organik atık bilincini
       okul topluluğuna taşımayı ve kompostu bir alışkanlığa dönüştürmeyi hedefliyor.
     </p>
@@ -38,19 +40,19 @@
   <section class="section">
     <div class="info-grid">
       <div class="info-text">
-        <div class="section-label">Proje Hikayesi</div>
-        <h2 class="section-title">Bu Proje <span>Nasıl Başladı?</span></h2>
-        <p>
+        <div class="section-label" data-i18n="project.story.label">Proje Hikayesi</div>
+        <h2 class="section-title"  data-i18n="project.story.title">Bu Proje <span>Nasıl Başladı?</span></h2>
+        <p data-i18n="project.story.p1">
           Harezmi Projesi, fen bilimleri dersindeki organik atık konusunu işlerken bir grup
           öğrencinin "Bunu biz de yapabilirdik!" sorusuyla başladı. Kısa sürede bir ders
           projesinden gerçek bir okul girişimine dönüştü.
         </p>
-        <p>
+        <p data-i18n="project.story.p2">
           Okulun kantinindeki ve bahçesindeki organik atıkların nasıl değerlendirilebileceğini
           araştırdık. Ulaştığımız sonuç basitti: kompostlama. Hem atığı azaltıyor hem de
           okul bahçesine değerli gübre sağlıyordu.
         </p>
-        <p>
+        <p data-i18n="project.story.p3">
           Projenin ilk aşamasında küçük bir kompost kutusu kuruldu. Şimdi ise okulun belirli
           bir köşesi bu amaca ayrılmış durumda ve öğrenciler sırayla bakımını üstleniyor.
         </p>
@@ -60,7 +62,7 @@
         <!-- <img src="harezmi_baslangic.jpg" alt="Harezmi Project starting image" /> -->
         <div class="img-placeholder" style="height:320px;">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <span>Projenin başlangıç / öğrenci çalışma görseli önerilir</span>
+          <span data-i18n="project.story.img">Projenin başlangıç / öğrenci çalışma görseli önerilir</span>
         </div>
       </div>
     </div>
@@ -69,24 +71,24 @@
   <!-- ── Goals & Statistics ── -->
   <div class="section-full">
     <div class="inner">
-      <div class="section-label">Proje Hedefleri</div>
-      <h2 class="section-title" style="margin-bottom:2rem;">Ne Başarmak <span>İstiyoruz?</span></h2>
+      <div class="section-label" data-i18n="project.goals.label">Proje Hedefleri</div>
+      <h2 class="section-title" style="margin-bottom:2rem;" data-i18n="project.goals.title">Ne Başarmak <span>İstiyoruz?</span></h2>
       <div class="stats">
         <div class="stat">
           <div class="stat-num">500+</div>
-          <div class="stat-label">Öğrenciye kompost eğitimi</div>
+          <div class="stat-label" data-i18n="project.stat1.label">Öğrenciye kompost eğitimi</div>
         </div>
         <div class="stat">
           <div class="stat-num">%30</div>
-          <div class="stat-label">Okul organik atık azalması hedefi</div>
+          <div class="stat-label" data-i18n="project.stat2.label">Okul organik atık azalması hedefi</div>
         </div>
         <div class="stat">
           <div class="stat-num">3</div>
-          <div class="stat-label">Aktif kompost noktası</div>
+          <div class="stat-label" data-i18n="project.stat3.label">Aktif kompost noktası</div>
         </div>
         <div class="stat">
           <div class="stat-num">1 Yıl</div>
-          <div class="stat-label">Proje süresi</div>
+          <div class="stat-label" data-i18n="project.stat4.label">Proje süresi</div>
         </div>
       </div>
     </div>
@@ -94,43 +96,43 @@
 
   <!-- ── Project Phases ── -->
   <section class="section">
-    <div class="section-label">Zaman Çizelgesi</div>
-    <h2 class="section-title">Proje <span>Aşamaları</span></h2>
+    <div class="section-label" data-i18n="project.phases.label">Zaman Çizelgesi</div>
+    <h2 class="section-title"  data-i18n="project.phases.title">Proje <span>Aşamaları</span></h2>
 
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-content">
-          <h3>Araştırma ve Planlama</h3>
-          <p>Okulun organik atık miktarı ölçüldü, uygulama alanları belirlendi ve kompostlama yöntemi seçildi. Danışman öğretmenlerimizle müfredata entegrasyon planlandı.</p>
+          <h3 data-i18n="project.p1.title">Araştırma ve Planlama</h3>
+          <p  data-i18n="project.p1.desc">Okulun organik atık miktarı ölçüldü, uygulama alanları belirlendi ve kompostlama yöntemi seçildi. Danışman öğretmenlerimizle müfredata entegrasyon planlandı.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-content">
-          <h3>İlk Kompost Noktasının Kurulumu</h3>
-          <p>Okul bahçesine delikli kompost kutusu yerleştirildi. Proje ekibi ilk yığını oluşturdu ve takibini başlattı.</p>
+          <h3 data-i18n="project.p2.title">İlk Kompost Noktasının Kurulumu</h3>
+          <p  data-i18n="project.p2.desc">Okul bahçesine delikli kompost kutusu yerleştirildi. Proje ekibi ilk yığını oluşturdu ve takibini başlattı.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-content">
-          <h3>Okul Genelinde Farkındalık</h3>
-          <p>Sınıflarda sunum ve atölye çalışmaları yapıldı. Kantin görevlileri organik atık ayrıştırma konusunda bilgilendirildi.</p>
+          <h3 data-i18n="project.p3.title">Okul Genelinde Farkındalık</h3>
+          <p  data-i18n="project.p3.desc">Sınıflarda sunum ve atölye çalışmaları yapıldı. Kantin görevlileri organik atık ayrıştırma konusunda bilgilendirildi.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <div class="step-content">
-          <h3>Web Sitesi Yayına Girdi</h3>
-          <p>Projenin bulguları ve öğretici içerikleri daha geniş bir kitleyle paylaşmak amacıyla bu web sitesi oluşturuldu.</p>
+          <h3 data-i18n="project.p4.title">Web Sitesi Yayına Girdi</h3>
+          <p  data-i18n="project.p4.desc">Projenin bulguları ve öğretici içerikleri daha geniş bir kitleyle paylaşmak amacıyla bu web sitesi oluşturuldu.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">5</div>
         <div class="step-content">
-          <h3>Ölçüm ve Raporlama</h3>
-          <p>Projenin çevresel etkisi ölçülmekte, elde edilen kompostun bahçe üzerindeki etkisi gözlemlenmektedir. Bulgular rapor hâline getirilecek.</p>
+          <h3 data-i18n="project.p5.title">Ölçüm ve Raporlama</h3>
+          <p  data-i18n="project.p5.desc">Projenin çevresel etkisi ölçülmekte, elde edilen kompostun bahçe üzerindeki etkisi gözlemlenmektedir. Bulgular rapor hâline getirilecek.</p>
         </div>
       </div>
     </div>
@@ -145,23 +147,23 @@
           <!-- <img src="harezmi_bahce.jpg" alt="Harezmi school garden compost area" /> -->
           <div class="img-placeholder" style="height:300px;">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            <span>Okul bahçesi / kompost noktası fotoğrafı önerilir</span>
+            <span data-i18n="project.why.img">Okul bahçesi / kompost noktası fotoğrafı önerilir</span>
           </div>
         </div>
         <div class="info-text">
-          <div class="section-label">Neden Biz?</div>
-          <h2 class="section-title">Harezmi Neden Bu <span>Projeyi Yapıyor?</span></h2>
-          <p>
+          <div class="section-label" data-i18n="project.why.label">Neden Biz?</div>
+          <h2 class="section-title"  data-i18n="project.why.title">Harezmi Neden Bu <span>Projeyi Yapıyor?</span></h2>
+          <p data-i18n="project.why.p1">
             Muhammed bin Musa el-Harezmi — okulumuzun adını aldığı büyük matematikçi — algoritmaların
             ve sistematik düşüncenin öncüsüydü. Bu projede de sistematik bir yaklaşım benimsedik:
             sorunu tanımla, çözümü planla, uygula ve ölç.
           </p>
-          <p>
+          <p data-i18n="project.why.p2">
             Kompost yapmak bir algoritma gibidir: doğru malzeme + doğru oran + doğru koşul = doğal
             gübre. Hem bilimsel düşünceyi öğreniyor hem de doğaya fayda sağlıyoruz.
           </p>
           <div class="highlight" style="margin-top:1.5rem;">
-            <p>🌱 <strong>Projemiz devam ediyor.</strong> Sonuçlarımızı burada paylaşmaya ve
+            <p data-i18n="project.why.box">🌱 <strong>Projemiz devam ediyor.</strong> Sonuçlarımızı burada paylaşmaya ve
             her yıl daha fazla öğrenciye ulaşmaya devam edeceğiz.</p>
           </div>
         </div>
@@ -171,29 +173,29 @@
 
   <!-- ── Project Results ── -->
   <section class="section">
-    <div class="section-label">Bulgular</div>
-    <h2 class="section-title">Şimdiye Kadar <span>Ne Öğrendik?</span></h2>
+    <div class="section-label" data-i18n="project.results.label">Bulgular</div>
+    <h2 class="section-title"  data-i18n="project.results.title">Şimdiye Kadar <span>Ne Öğrendik?</span></h2>
 
     <div class="cards">
       <div class="card">
         <div class="card-body">
           <div class="card-icon">📊</div>
-          <h3>Atık Miktarı Azaldı</h3>
-          <p>Organik ayrıştırma uygulaması başladıktan sonra okulun genel atık hacminde gözle görülür bir düşüş yaşandı.</p>
+          <h3 data-i18n="project.r1.title">Atık Miktarı Azaldı</h3>
+          <p  data-i18n="project.r1.desc">Organik ayrıştırma uygulaması başladıktan sonra okulun genel atık hacminde gözle görülür bir düşüş yaşandı.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🌻</div>
-          <h3>Bahçe Dönüştü</h3>
-          <p>Okul bahçesindeki bitkilere kompost uygulandı. Öğrenciler toprağın renginin ve bitkisel büyümenin değiştiğini gözlemledi.</p>
+          <h3 data-i18n="project.r2.title">Bahçe Dönüştü</h3>
+          <p  data-i18n="project.r2.desc">Okul bahçesindeki bitkilere kompost uygulandı. Öğrenciler toprağın renginin ve bitkisel büyümenin değiştiğini gözlemledi.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="card-icon">🧠</div>
-          <h3>Farkındalık Arttı</h3>
-          <p>Yapılan anket sonuçlarına göre proje öncesine kıyasla öğrencilerin organik atık konusundaki farkındalığı belirgin biçimde yükseldi.</p>
+          <h3 data-i18n="project.r3.title">Farkındalık Arttı</h3>
+          <p  data-i18n="project.r3.desc">Yapılan anket sonuçlarına göre proje öncesine kıyasla öğrencilerin organik atık konusundaki farkındalığı belirgin biçimde yükseldi.</p>
         </div>
       </div>
     </div>
@@ -202,15 +204,17 @@
     <!-- <img src="harezmi_sonuc.jpg" alt="Project results - school garden harvest" /> -->
     <div class="img-placeholder mt-3" style="height:220px;">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9DD295" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Proje sonuçları / okul bahçesi hasat günü görseli önerilir</span>
+      <span data-i18n="project.results.img">Proje sonuçları / okul bahçesi hasat günü görseli önerilir</span>
     </div>
   </section>
 
   <footer>
-    <div class="footer-logo">🌱 Organik Bilim</div>
-    <p>Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
+    <div class="footer-logo" data-i18n="footer.logo">🌱 Organik Bilim</div>
+    <p data-i18n="footer.text">Harezmi Okul Projesi &nbsp;·&nbsp; Doğaya saygı, geleceğe yatırım</p>
   </footer>
 
   <script src="nav.js"></script>
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>
